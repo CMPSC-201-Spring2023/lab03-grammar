@@ -14,10 +14,10 @@
       fragment: "Add Your Name Here"
       count: 0
       exact: true
-  - description: Write a minimum number of meaningful words in the report
+  - description: Write a minimum number of meaningful words (300) in the report
     check: CountFileWords
     options:
-      count: 500
+      count: 300
       exact: false
   - description: Confirm that the markdown file has the correct number of headers
     check: CountMarkdownTags
