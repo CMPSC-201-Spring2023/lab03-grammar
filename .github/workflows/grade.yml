@@ -24,16 +24,6 @@ jobs:
         uses: bewuethr/mdl-action@v1
         with:
           style-file: .github/workflows/style.rb
-  checkstyle:
-    name: runner / checkstyle
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: dbelyaev/action-checkstyle@v0.5.1
-        with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
-          level: warning
   gatorgrader:
     runs-on: ubuntu-latest
     name: Run GatorGrader

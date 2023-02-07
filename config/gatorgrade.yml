@@ -8,16 +8,16 @@
       fragment: TODO
       count: 0
       exact: true
-  - description: Delete the 'Add Your Name Here' prompt in the report file
+  - description: Delete the 'Add Your Name(s) Here' prompt in the report file
     check: MatchFileFragment
     options:
       fragment: "Add Your Name Here"
       count: 0
       exact: true
-  - description: Write a minimum number of meaningful words (300) in the report
+  - description: Write a minimum number of meaningful words (400) in the report
     check: CountFileWords
     options:
-      count: 300
+      count: 400
       exact: false
   - description: Confirm that the markdown file has the correct number of headers
     check: CountMarkdownTags
@@ -43,7 +43,6 @@
       fragment: "!["
       count: 1
       exact: false
-
 
 # confirm a suitable number of commit messages
 - description: Have at least a specific minimum of commits (5) in repository
